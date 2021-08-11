@@ -14,8 +14,10 @@ provider "aws" {
   secret_key = var.secret_key
 }
 
-module "my_vpc" {
-    source = "../Modules/VPC"
+
+ module "gft" {
+    source  = "app.terraform.io/GFT123123123/gft/aws"
+    version = "1.1.1"
 
     vpc_name             = "non-prod"
     vpc_cidr             = "10.1.0.0/16"
