@@ -67,6 +67,7 @@ variable "default_security_group_egress" {
       self        = false
       to_port     = 0
     }
+    ]
 }
 
 variable "default_security_group_ingress" {
