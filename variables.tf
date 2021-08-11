@@ -92,8 +92,6 @@ variable "default_security_group_ingress" {
     },
   ]
 }
-}
-}
 
 variable "vpc_tags" {
   description = "Tags to apply to resources created by VPC module"
