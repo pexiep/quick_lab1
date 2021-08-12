@@ -13,28 +13,33 @@ variable "tenancy" {
 variable "vpc_cidr" {
   description = "CIDR block for VPC"
   type        = string
+  default     = []
 }
 
 
 variable "vpc_azs" {
   description = "Availability zones for VPC"
   type        = list(string)
+  default     = []
 }
 
 variable "vpc_private_subnets" {
   description = "Private subnets for VPC"
   type        = list(string)
+  default     = []
 }
 
 
 variable "vpc_public_subnets" {
   description = "Public subnets for VPC"
   type        = list(string)
+  default     = []
 }
 
 variable "vpc_db_subnets" {
   description = "Database subnets for VPC"
   type        = list(string)
+  default     = []
 }
 
 variable "vpc_enable_nat_gateway" {
