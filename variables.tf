@@ -12,7 +12,7 @@ variable "tenancy" {
 
 variable "vpc_cidr" {
   description = "CIDR block for VPC"
-  type        = string
+  type        = list(string)
   default     = []
 }
 
