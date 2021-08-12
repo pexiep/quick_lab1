@@ -16,7 +16,7 @@ provider "aws" {
 
 
  module "gft" {
-    source = "github.com/pexiep/terraform-aws-gft"
+    source = "git::https://github.com/pexiep/terraform-aws-gft/vpc.git?ref=v1.0.0"
 
     vpc_name             = "non-prod"
     vpc_cidr             = "10.1.0.0/16"
